@@ -1,73 +1,35 @@
-특성 정리
+Project Name : NewBigDataProject
 =============
 
-***
-Age | Objective Feature | age | int (days)
------
->연령 | 객관적인 기능 | 나이 | int (일) |
 
-***
-Height | Objective Feature | height | int (cm) |
------
->높이 | 객관적인 기능 | 높이 | int (cm) |
-
-***
-Weight | Objective Feature | weight | float (kg) |
------
->무게 | 객관적인 기능 | 무게 | 부유물 (kg) |
-
-***
-Gender | Objective Feature | gender | categorical code |
------
->성별 | 객관적인 기능 | 성별 | 범주 코드 |
-
-***
-Systolic blood pressure | Examination Feature | ap_hi | int |
------
->수축기 혈압 | 시험 기능 | ap_hi | int |
-
-***
-Diastolic blood pressure | Examination Feature | ap_lo | int |
------
->확장기 혈압 | 시험 기능 | ap_lo | int |
-
-***
-Cholesterol | Examination Feature | cholesterol |
------
-1. normal
-2. above normal
-3. well above normal |
-
->콜레스테롤 | 시험 기능 | 콜레스테롤 | 1 : 정상, 2 : 정상 이상, 3 : 정상 이상 |
-
-***
-Glucose | Examination Feature | gluc |
------
-1. normal
-2. above normal
-3. well above normal |
-
->포도당 | 시험 기능 | 글루코즈 | 1 : 정상, 2 : 정상 이상, 3 : 정상 이상 |
-
-***
-Smoking | Subjective Feature | smoke | binary |
------
->흡연 | 주관적 특성 | 연기 | 이진 |
-
-***
-Alcohol intake | Subjective Feature | alco | binary |
------
->알콜 섭취량 | 주관적 특성 | 알콜 | 이진 |
-
-***
-Physical activity | Subjective Feature | active | binary |
------
->신체 활동 | 주관적 특성 | 활성 | 이진 |
-
-***
-Presence or absence of cardiovascular disease | Target Variable | cardio | binary |
------
->심혈관 질환의 유무 | 목표 변수 | 심장 | 이진 |
-
-***
-syntax: [https://www.kaggle.com/sulianova/cardiovascular-disease-dataset](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset)
+특성 정리
+=============
+* MEAN_RR : 모든 RR 간격의 평균 
+* MEDIAN_RR : 모든 RR 간격의 중앙값 
+* SDRR : 모든 간격의 표준 편차 
+* RMSSD : 인접한 RR 간격 간의 차의 제곱의 합 평균의 제곱근 
+* SDSD : 인접한 RR 간격 간의 모든 차이 간격의 표준 편차 
+* SDRR_RMSSD : SDRR의 비율 
+* RMSSD : HR 심박수 (분당 박동수) 
+* pNN25 : 인접한 RR 간격의 %가 25ms 이상 차이
+* pNN50 : 인접한 RR 간격의 %가 50ms 이상 차이 
+* SD1 : 단기 HRV의 푸앵카레 플롯 기술자 
+* SD2 : 장기 HRV의 푸앵카레 플롯 기술자 
+* 모든 RR 간격의 KURT 첨도
+* 모든 RR 간격의 SKEW 비대칭
+* MEAN_REL_RR : 모든 상대 RR 간격의 평균 
+* MEDIAN_REL_RR : 모든 RR 간격의 중앙값 
+* SDRR_REL_RR : 모든 상대 RR 간격의 표준 편차 
+* RMSSD_REL_RR : 인접하는 상대 RR 간격의 차의 제곱의 합 평균의 제곱근 
+* SDSD_REL_RR : 인접하는 상대 RR 간격 간의 모든 차이 간격의 표준 편차 
+* SDRR_RMSSD_REL : RMSSD_REL을 통한 SDRR_REL의 비율 
+* KURT_REL_RR : 모든 상대 RR 간격의 첨도 
+* SKEW_REL_RR : 모든 상대 RR 간격의 왜곡도 
+* VLF : HRV 전력 스펙트럼의 매우 낮은 (0.003Hz - 0.04Hz) 주파수 대역 
+* HRV : 파워 스펙트럼의 LF 로우 (0.04Hz - 0.15Hz) 주파수 대역 
+* HF : HR 스펙트럼의 HF (0.15Hz - 0.4Hz) 주파수 대역 
+* TP : 총 HRV 파워 스펙트럼 
+* LF / HF : HF에 대한 LF의 비율 
+* HF / LF : HF 대 LF의 비율 
+* sampen : RR 신호의 샘플 엔트로피 
+* higuci : 히구치 프랙탈 차원
