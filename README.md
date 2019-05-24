@@ -2,8 +2,8 @@ Project Name : NewBigDataProject
 =============
 
 
-특성 정리
-=============
+### 특성 정리
+-------------
 * MEAN_RR : 모든 RR 간격의 평균 
 * MEDIAN_RR : 모든 RR 간격의 중앙값 
 * SDRR : 모든 간격의 표준 편차 
