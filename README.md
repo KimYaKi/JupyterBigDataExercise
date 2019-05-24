@@ -15,8 +15,8 @@ Project Name : NewBigDataProject
 * pNN50 : 인접한 RR 간격의 %가 50ms 이상 차이 
 * SD1 : 단기 HRV의 푸앵카레 플롯 기술자 
 * SD2 : 장기 HRV의 푸앵카레 플롯 기술자 
-* 모든 RR 간격의 KURT 첨도
-* 모든 RR 간격의 SKEW 비대칭
+* KURT : 모든 RR 간격의 KURT 첨도
+* SKEW : 모든 RR 간격의 SKEW 비대칭
 * MEAN_REL_RR : 모든 상대 RR 간격의 평균 
 * MEDIAN_REL_RR : 모든 RR 간격의 중앙값 
 * SDRR_REL_RR : 모든 상대 RR 간격의 표준 편차 
